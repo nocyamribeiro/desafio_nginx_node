@@ -23,4 +23,9 @@ A aplicação tomou como base as explicações feitas nas aulas a partir deste [
 Algumas responsabilidades foram separadas por meio de funções para facilitar a leitura e a função listPeople ficou responsável por fazer o select no banco e retornar cada nome no formato html <ul><li>. Para gerar nomes diferentes foi utilizado uma biblioteca que gera nomes, e no caso deste desafio foi escolhido o dicionário dos nomes dos personagens do Star Wars.
 Toda vez que sobe a aplicação, a partir do comando `docker-compose up`, um novo nome é cadastrado.
 
+### Construção do banco
+
+Para forçar o banco de dados já possui a tabela que era necessária para a aplicação node, o arquivo /scripts/schema.sql foi criado. Este arquivo é chamado na construção do container do mysql, pois
+foi adicionado, a partir do volume deste serviço, em um diretório que tem a função de subir arquivos .sql na inicialização do banco, o /docker-entrypoint-initdb.d.
+
 
