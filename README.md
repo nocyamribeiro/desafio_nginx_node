@@ -20,7 +20,7 @@ Para atender os requisitos utilizou-se de um docker-compose com três serviços 
 ### Estratégia de desenvolvimento da aplicação
 
 A aplicação tomou como base as explicações feitas nas aulas a partir deste [arquivo](https://github.com/codeedu/fullcycle2.0-devops-docker/blob/main/node/index.js).
-Algumas responsabilidades foram separadas por meio de funções para facilitar a leitura e a função listPeople ficou responsável por fazer o select no banco e retornar cada nome no formato html <ul><li>. Para gerar nomes diferentes foi utilizado uma biblioteca que gera nomes, e no caso deste desafio foi escolhido o dicionário dos nomes dos personagens do Star Wars.
+Algumas responsabilidades foram separadas por meio de funções para facilitar a leitura e a função listPeople ficou responsável por fazer o select no banco e retornar cada nome no formato html `<ul><li>`. Para gerar nomes diferentes foi utilizado uma biblioteca que gera nomes, e no caso deste desafio foi escolhido o dicionário dos nomes dos personagens do Star Wars.
 Toda vez que sobe a aplicação, a partir do comando `docker-compose up`, um novo nome é cadastrado.
 
 ### Construção do banco
