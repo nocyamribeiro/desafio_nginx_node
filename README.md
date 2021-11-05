@@ -26,6 +26,6 @@ Toda vez que sobe a aplicação, a partir do comando `docker-compose up`, um nov
 ### Construção do banco
 
 Para forçar o banco de dados já possui a tabela que era necessária para a aplicação node, o arquivo /scripts/schema.sql foi criado. Este arquivo é chamado na construção do container do mysql, pois
-foi adicionado, a partir do volume deste serviço, em um diretório que tem a função de subir arquivos .sql na inicialização do banco, o /docker-entrypoint-initdb.d.
+foi adicionado a partir do volume deste serviço, em um diretório que tem a função de subir arquivos .sql na inicialização do banco, o /docker-entrypoint-initdb.d.
 
 
